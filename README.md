@@ -1,4 +1,4 @@
-[![Build Status](https://github.com/serializingme/gpo-bypass/workflows/Main%20Jobs/badge.svg)](https://github.com/serializingme/gpo-bypass/actions)
+[![Build Status](https://github.com/yannrichet/gpo-bypass/workflows/Main%20Jobs/badge.svg)](https://github.com/yannrichet/gpo-bypass/actions)
 
 # GPO Bypass
 ## Introduction
