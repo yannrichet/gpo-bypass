@@ -91,6 +91,18 @@ LONG WINAPI HookRegQueryValueExW(HKEY hKey, LPCWSTR lpValueName, LPDWORD lpReser
 
             return ERROR_SUCCESS;
         }
+        else if (wcsicmp(lpValueName, L"PasswordManagerEnabled") == 0) {
+            *((LPDWORD)lpData) = 1;
+            *lpcbData = 4;
+
+            return ERROR_SUCCESS;
+        }
+        else if (wcsicmp(lpValueName, L"DisableFirefoxAccounts") == 0) {
+            *((LPDWORD)lpData) = 0;
+            *lpcbData = 4;
+
+            return ERROR_SUCCESS;
+        }            
         else if (wcsicmp(lpValueName, L"Default") == 0 && hKey == installPermissionKey) {
             *((LPDWORD)lpData) = 1;
             *lpcbData = 4;
